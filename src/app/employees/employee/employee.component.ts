@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { EmployeeService } from 'src/app/shared/employee.service';
-
+// import { EmployeeService } from 'src/app/shared/employee.service';
+import { EmployeeService } from '../../shared/employee.service';
 
 @Component({
   selector: 'app-employee',
@@ -9,8 +9,8 @@ import { EmployeeService } from 'src/app/shared/employee.service';
 })
 export class EmployeeComponent implements OnInit {
 
-  constructor(private eservice :EmployeeService) { }
-
+  constructor(public eservice :EmployeeService) { }
+//treba promeniti public u private za eservice
  departments = [
    {id: 1 , value : "Dep 1"},
    {id: 2 , value : "Dep 2"},

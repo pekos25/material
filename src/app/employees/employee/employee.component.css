@@ -10,6 +10,7 @@
 .controles-conatainer > * {
     width: 100%;
 }
+  /* sve komponente koje se nalaze u klasi .controles-conatainer se biti 100% sirine  */
 
 .add-bottom-paddig{
     padding-bottom: 10px;
