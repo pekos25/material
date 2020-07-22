@@ -4,3 +4,19 @@ html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 
+.notification {
+   font-size: 18px;
+   font-weight: bold;
+}
+
+.success {
+    background-color:#5cb85c;
+    color: honeydew;
+}
+
+.clear-form {
+    background-color:rgb(94, 30, 30);;
+    color: whitesmoke
+}
+
+
