@@ -1,3 +1,8 @@
+<mat-toolbar>
+    <span>{{eservice.form.controls['$key'].value ? "Modyfy employee" : "New employee"}}</span>
+    <span class="fill-remaining-space"></span>
+    <button class="btn-dialog-close" mat-stroked-button (click)="onClose()" tabindex="-1"><mat-icon>clear</mat-icon></button>
+</mat-toolbar>
 <form [formGroup]="eservice.form" class="normal-form">
     <mat-grid-list cols="2" rowHeight="300px">
         <mat-grid-tile>

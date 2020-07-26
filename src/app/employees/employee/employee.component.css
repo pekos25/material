@@ -23,3 +23,12 @@ mat-radio-button {
 .button-row  button {
     margin-left: 10px;
 }
+
+
+      
+.btn-dialog-close {
+    width: 45px;
+    min-width: 0px;
+    height: 40px;
+    padding: 0px;
+} 

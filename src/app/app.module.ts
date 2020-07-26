@@ -12,13 +12,16 @@ import {AngularFireModule} from '@angular/fire'
 import {AngularFireDatabaseModule} from '@angular/fire/database'
 import { environment } from 'src/environments/environment';
 import { EmployeeListComponent } from './employees/employee-list/employee-list.component';
+import {DatePipe} from '@angular/common';
+import { MatConfirmDialogComponent } from './mat-confirm-dialog/mat-confirm-dialog.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     EmployeesComponent,
     EmployeeComponent,
-    EmployeeListComponent
+    EmployeeListComponent,
+    MatConfirmDialogComponent
   ],
   imports: [
     BrowserModule,
@@ -30,7 +33,8 @@ import { EmployeeListComponent } from './employees/employee-list/employee-list.c
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFireDatabaseModule
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  providers: [DatePipe],
+  bootstrap: [AppComponent],
+  entryComponents: [EmployeeComponent, MatConfirmDialogComponent]
 })
 export class AppModule { }

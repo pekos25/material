@@ -23,4 +23,9 @@ export class NotificationService {
     this.config['panelClass']=['notification' , 'clear-form'];
     this.snackbar.open(msg , '' , this.config)
   }
+
+  warn(msg){
+    this.config['panelClass']=['notification' , 'warn'];
+    this.snackbar.open(msg , '' , this.config)
+  }
 }
